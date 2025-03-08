@@ -36,6 +36,8 @@ export const ShoppingCartProvider = ({children}) => {
     const [searchByTitle, setSearchByTitle] = useState(null);
     // Category
     const [searchByCategory, setSearchByCategory] = useState(null);
+    // Nabvar
+    const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(false);
 
     useEffect(() => {
         fetch('https://api.escuelajs.co/api/v1/products')
@@ -98,7 +100,9 @@ export const ShoppingCartProvider = ({children}) => {
             setFilteredItems,
             filteredItems,
             setSearchByCategory,
-            searchByCategory
+            searchByCategory,
+            isMobileNavbarOpen,
+            setIsMobileNavbarOpen
         }}>
             {children}
         </ShoppingCartContext.Provider>

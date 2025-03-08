@@ -41,7 +41,7 @@ const Card = (data) => {
     
     return (
         <div 
-            className='bg-white cursor-pointer transition-transform duration-300 hover:scale-102 w-56' 
+            className='bg-white cursor-pointer transition-transform duration-300 hover:scale-102 flex-1 min-w-[45%] md:min-w-[30%] lg:min-w-[22%]' 
             onClick={() => showProduct(data.data) }
         >
             <figure className='relative mb-2 w-full h-4/5'>

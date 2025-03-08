@@ -48,7 +48,7 @@ const renderView = () => {
           onChange={(event) => context.setSearchByTitle(event.target.value)}
         />
       </div>
-        <div className='grid grid-cols-4 w-full max-w-screen-lg'>
+        <div className='flex flex-wrap gap-4 justify-center w-[95%] sm:w-[90%] md:w-[80%] max-w-screen-lg'>
           { renderView() }
         </div>
         <ProductDetail />
