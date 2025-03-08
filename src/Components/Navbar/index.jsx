@@ -6,10 +6,10 @@ import { ShoppingCartContext } from '../../Context'
 
 const Navbar = () => {
     const context = useContext(ShoppingCartContext)
-    const activeStyle = 'font-bold underline underline-offset-4'
+    const activeStyle = 'font-semibold underline underline-offset-4'
 
     return (
-        <nav className="w-full fixed top-0 z-10 bg-gradient-to-r from-blue-400 via-violet-300 to-rose-300 shadow-md">
+        <nav className="text-base font-light w-full fixed top-0 z-10 bg-gradient-to-r from-blue-400 via-violet-300 to-rose-300 shadow-md">
           <div className="flex justify-start items-center gap-3 py-4 px-6 lg:px-8">
             {/* button in mobile */}
             <button 
