@@ -25,7 +25,7 @@ const renderView = () => {
       )
     } else {
       return (
-        <div>No results found :(</div>
+        <div className='w-full text-center'>No results found :(</div>
       )
     }
   } else {
@@ -48,7 +48,7 @@ const renderView = () => {
           onChange={(event) => context.setSearchByTitle(event.target.value)}
         />
       </div>
-        <div className='flex flex-wrap gap-4 justify-center w-[95%] sm:w-[90%] md:w-[80%] max-w-screen-lg'>
+        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[95%] sm:w-[90%] md:w-[80%] max-w-screen-lg'>
           { renderView() }
         </div>
         <ProductDetail />
